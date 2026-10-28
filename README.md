@@ -34,3 +34,11 @@ Support desk. Decision records: whoever signed them.
 ---
 
 Exported 2026-10-04 from the `support` repo, `apps/kb/` → `src/`.
+
+---
+
+## MEGA.dev S01E03: what #4471 shows
+
+- Page: `src/routes/kb/incidents/4471/problems/+page.svx`, numbers from `src/lib/kb/ProblemTable.svelte`.
+- As the desk sees it: `rendered/problems.html` (SvelteKit + mdsvex prerender, styles inlined) and `rendered/problems.jpg`.
+- Tickets: issues #1 `parser` (374), #2 `hint` (33), #3 `one-day` (5).

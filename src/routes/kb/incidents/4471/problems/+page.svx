@@ -1,0 +1,45 @@
+---
+layout: runbook
+title: '#4471 · three problems, not one'
+owner: Bartlomiej Gajdur
+status: open
+reviewed: 2026-10-28
+signature: Bartlomiej Gajdur
+---
+
+<script>
+  import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+
+  const repo = 'https://github.com/BartlomiejGajdur/mega-s01e03-what-it-shows/issues';
+</script>
+
+[#4471](/kb/incidents/4471) was merged on subject lines ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
+and marked known as one parser bug. Read for what each report shows, it holds three problems.
+Each one now has a ticket of its own.
+
+<ProblemTable ticket={4471} issues={{ parser: `${repo}/1`, hint: `${repo}/2`, 'one-day': `${repo}/3` }} />
+
+<Callout kind="warn">
+The queued parser fix closes only the <code>parser</code> row. The other two keep coming after it ships.
+</Callout>
+
+## How a report is placed
+
+1. **`one-day`**: the date moved by one day, not month for day ("Lisbon got Tuesday, Toronto got
+   Monday"). This is time zones, not the parser. The desk already listed these reports in `desk-notes.json`.
+2. **`hint`**: the report came through the booking form of a tenant on `booking-v3`. The form's hint says
+   `MM/DD/YYYY`, people type month first, and the form reads the date day first.
+3. **`parser`**: every other report from a day-first tenant. The shared parser reads the date month first.
+
+The tenant decides the problem, not the reporter's browser. Intake tags from the browser, so its tag
+is wrong in the reports counted in the table.
+
+## For the desk
+
+- Keep #4471 for `parser` only. Move new `hint` and `one-day` reports to their own tickets.
+- Subjects do not tell these apart: the same subject line shows up under all three problems. Merging on
+  subject needs a new decision record to replace 0001.
+
+<RenderStamp {signature} />
