@@ -41,4 +41,4 @@ Exported 2026-10-04 from the `support` repo, `apps/kb/` → `src/`.
 
 - Page: `src/routes/kb/incidents/4471/problems/+page.svx`, numbers from `src/lib/kb/ProblemTable.svelte`.
 - As the desk sees it: `rendered/problems.html` (SvelteKit + mdsvex prerender, styles inlined) and `rendered/problems.jpg`.
-- Tickets: issues #1 `parser` (374), #2 `hint` (33), #3 `one-day` (5).
+- Tickets: issues #1 `parser` (379, the desk's count; 374 without the one-day moves), #2 `hint` (33), #3 `one-day` (5).
