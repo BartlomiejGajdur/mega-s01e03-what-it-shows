@@ -12,7 +12,7 @@ signature: Bartlomiej Gajdur
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const repo = 'https://github.com/BartlomiejGajdur/mega-s01e03-what-it-shows-v2/issues';
+  const repo = 'https://github.com/BartlomiejGajdur/mega-s01e03-what-it-shows/issues';
 </script>
 
 [#4471](/kb/incidents/4471) was merged on subject lines ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
