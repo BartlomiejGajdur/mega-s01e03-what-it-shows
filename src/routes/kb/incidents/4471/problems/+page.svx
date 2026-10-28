@@ -4,7 +4,7 @@ title: '#4471 · three problems, not one'
 owner: Bartlomiej Gajdur
 status: open
 reviewed: 2026-10-28
-signature: Bartlomiej Gajdur
+signature: v1.eyJzdWIiOiIyOTM2IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxODI4NDIsImV4cCI6MTc5MzI2OTI0Mn0.lAmTBK5vbPTUdr1doygvqcJWnGH6giLnuvMnTQ7Lyjg
 ---
 
 <script>
